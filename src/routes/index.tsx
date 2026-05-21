@@ -11,14 +11,14 @@ const tools = [
     to: "/tools/favicon-generator",
     name: "Image to Favicon",
   },
-  {
-    to: "/tools/json-sorter",
-    name: "JSON Sorter",
-  },
-  {
-    to: "/tools/image-compressor",
-    name: "Image Compress",
-  },
+  // {
+  //   to: "/tools/json-sorter",
+  //   name: "JSON Sorter",
+  // },
+  // {
+  //   to: "/tools/image-compressor",
+  //   name: "Image Compress",
+  // },
 ] as const;
 
 function HomePage() {
