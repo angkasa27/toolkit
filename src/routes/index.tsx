@@ -28,12 +28,12 @@ const tools = [
 function HomePage() {
   return (
     <main className="flex min-h-screen flex-col bg-background px-4 py-6 text-foreground">
-      <header className="mx-auto flex w-full max-w-xl justify-end">
+      <header className="mx-auto flex w-full max-w-6xl justify-end">
         <ThemeToggle />
       </header>
 
       <section className="flex flex-1 items-center justify-center py-10">
-        <div className="w-full max-w-xl text-center">
+        <div className="w-full max-w-6xl text-center">
           <h1 className="text-base leading-7 font-normal text-foreground">
             Small browser tools for images, JSON, and web assets.
           </h1>
