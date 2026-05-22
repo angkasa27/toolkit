@@ -2,6 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { ArrowLeft } from "lucide-react";
 
 import { ThemeToggle } from "../components/theme-toggle";
+import { Button } from "@/components/ui/button";
 
 type ToolShellProps = {
   children: React.ReactNode;
@@ -13,14 +14,16 @@ export function ToolShell({ children, title, description }: ToolShellProps) {
   return (
     <div className="flex min-h-screen flex-col bg-background px-4 py-6 text-foreground">
       <header className="mx-auto flex w-full max-w-6xl items-center justify-between gap-4">
-        <Link
-          to="/"
-          aria-label="Back to tools"
-          className="inline-flex items-center gap-2 text-sm text-muted-foreground underline-offset-4 hover:text-foreground hover:underline focus:outline-none focus-visible:underline"
+        <Button
+          nativeButton={false}
+          variant="ghost"
+          size="sm"
+          render={<Link to="/" aria-label="Back to tools" />}
         >
           <ArrowLeft aria-hidden="true" className="size-4" />
           Back
-        </Link>
+        </Button>
+
         <ThemeToggle />
       </header>
 

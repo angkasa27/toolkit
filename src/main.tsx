@@ -26,7 +26,7 @@ if (!rootElement) {
 
 ReactDOM.createRoot(rootElement).render(
   <StrictMode>
-    <ThemeProvider defaultTheme="dark" storageKey="toolkit-theme">
+    <ThemeProvider>
       <RouterProvider router={router} />
     </ThemeProvider>
   </StrictMode>,
