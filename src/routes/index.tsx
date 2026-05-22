@@ -11,6 +11,10 @@ const tools = [
     to: "/tools/favicon-generator",
     name: "Image to Favicon",
   },
+  {
+    to: "/tools/svg-converter",
+    name: "SVG Converter",
+  },
   // {
   //   to: "/tools/json-sorter",
   //   name: "JSON Sorter",
