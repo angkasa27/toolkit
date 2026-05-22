@@ -3,6 +3,7 @@ import { ArrowLeft } from "lucide-react";
 
 import { ThemeToggle } from "../components/theme-toggle";
 import { Button } from "@/components/ui/button";
+import { Footer } from "@/components/footer";
 
 type ToolShellProps = {
   children: React.ReactNode;
@@ -43,9 +44,7 @@ export function ToolShell({ children, title, description }: ToolShellProps) {
         </section>
       </main>
 
-      <footer className="text-center text-sm text-muted-foreground">
-        Toolkit runs client-side in your browser.
-      </footer>
+      <Footer />
     </div>
   );
 }

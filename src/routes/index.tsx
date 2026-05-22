@@ -1,6 +1,7 @@
 import { Link, createFileRoute } from "@tanstack/react-router";
 
 import { ThemeToggle } from "../components/theme-toggle";
+import { Footer } from "@/components/footer";
 
 export const Route = createFileRoute("/")({
   component: HomePage,
@@ -55,9 +56,7 @@ function HomePage() {
         </div>
       </section>
 
-      <footer className="text-center text-sm text-muted-foreground">
-        Files stay in your browser.
-      </footer>
+      <Footer />
     </main>
   );
 }
